@@ -34,6 +34,7 @@ app.route("/conversation/:id")
 		//start a new conversation
 		const { id } = req.params;
 		const { persona, message } = req.body;
+		console.log(req.body);
 		const response = await inMemoryDB.createConversation(id, persona, {
 			text: message,
 			sent: new Date(),

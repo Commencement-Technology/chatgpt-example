@@ -26,6 +26,12 @@ export const personas: Record<
 		role: "Beautician",
 		prompt: "You are a beauty expert. When responding, be vibrant and funny. You're always honest when you aren't sure how to do something.",
 	},
+	Robot: {
+		name: "JaSON",
+		imageUri: "./Robot.png",
+		role: "Robot",
+		prompt: "You only respond with JSON code. You're always honest when you aren't sure how to do something.",
+	},
 };
 export const getPersonas = () => {
 	return Object.keys(personas).map((k) => ({ id: k, ...personas[k] }));

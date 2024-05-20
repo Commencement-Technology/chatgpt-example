@@ -5,7 +5,7 @@ import { Root } from "./Root";
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">FriendGPT</header>
+			<header className="App-header">Advice GPT</header>
 			<div className="App-Body">
 				<BrowserRouter>
 					<Routes>

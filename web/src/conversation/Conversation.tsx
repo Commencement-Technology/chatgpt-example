@@ -64,8 +64,10 @@ const ConversationContent = ({
 	useEffect(() => {
 		if (id) {
 			getMessages(id).then((messages) => {
-				setConversation(messages);
-				setIsStarted(true);
+				if (messages.length > 0) {
+					setConversation(messages);
+					setIsStarted(true);
+				}
 			});
 		}
 	}, [id]);
